@@ -1,0 +1,8 @@
+
+
+apt-key del '95BD4743'
+curl -sSfL 'https://packages.sury.org/php/apt.gpg' -o /etc/apt/trusted.gpg.d/dietpi-php.gpg
+/boot/dietpi/func/dietpi-set_software apt-cache clean
+apt update
+apt upgrade
+
